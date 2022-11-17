@@ -11,9 +11,5 @@
 
     }
 }
-
-#titel1{
-    -webkit-animation: rotate-bl 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    animation: rotate-bl 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-}
+/* grid is verdeeld in vakjes van 200 px wijd, in mobiel staan ze onder elkaar, op laptop staan ze per 4*/
 
