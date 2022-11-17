@@ -7,4 +7,3 @@ for(i;i<=aantalGetallen;i++){
     totaleSom = totaleSom + ingaveGetal;
 }
 console.log("De totale som van",aantalGetallen, "is", totaleSom);
-

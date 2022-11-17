@@ -3,8 +3,6 @@ let ster = "*";
 let i = 1;
 
 for(i;i<=aantalSterren;i++){
-    console.log(ster);
+
     ster = ster + "*";
-}
-
-
+}console.log(ster);

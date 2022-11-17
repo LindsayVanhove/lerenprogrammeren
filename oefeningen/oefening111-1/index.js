@@ -1,6 +1,6 @@
-let age = Number(prompt("Geef leeftijd"));
-if (age >=18){
-    console.log ("U mag meedoen")
-}else {
-    console.log ("U mag niet meedoen")
+let leeftijd = Number(prompt("Wat is uw leeftijd"));
+if (leeftijd>=18){
+    console.log ("U bent",leeftijd,"jaar en mag meedoen")
+}else{
+    console.log ("U mag niet meedoen.")
 }

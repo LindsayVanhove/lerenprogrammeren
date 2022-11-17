@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Rekenlijst</title>
+</head>
+<body class="container-fluid vh-75 d-flex flex-column align-items-center justify-content-center">
+<!-- Button trigger modal -->
+<button class="btn btn-primary mt-5" data-bs-target="#staticBackdrop" data-bs-toggle="modal" id="start" type="button">Rekenlijst</button> <!-- REKENLIJST -->
+<div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdrop" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Rekenlijst</h1><!-- Titel -->
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="p-3">
+                <select aria-label="Default select example" class="form-select" id="oefeningen">
+                    <option selected>
+                        Selecteer de bewerking
+                    </option><!-- Berekening  -->
+                    <option value="1">
+                        +
+                    </option>
+                    <option value="2">
+                        -
+                    </option>
+                    <option value="3">
+                        /
+                    </option>
+                    <option value="4">
+                        *
+                    </option>
+                    <option value="5">
+                        mix
+                    </option>
+                </select>
+            </div>
+            <section>
+                <form action="">
+                    <!-- Input van en tot -->
+                    <div class="input-group p-3">
+                        <input class="form-control" id="Van" placeholder="Van" type="number"> <span class="input-group-text">tot</span> <input aria-label="Tot" class="form-control" id="Tot" placeholder="Tot" type="number">
+                    </div>
+                    <div class="oefeningen p-3">
+                        <!-- Hoeveel oefeningen -->
+                        <input class="form-control" id="hoeveelheden" placeholder="Hoeveel oefeningen?" type="number&quot;">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" data-bs-dismiss="modal" onclick="getInputForm()" type="button">Verstuur</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- Resultaten -->
+<div class="mt-1">
+    <div id="titel"></div>
+    <div class="list-group-horizontal" id="resultaat">
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="./index.js">
+    </script>
+</div>
+</body>
+</html>
